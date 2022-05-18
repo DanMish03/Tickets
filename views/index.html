@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tickets Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Shippori+Antique&display=swap');
+    </style>
+
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+<div class="header">
+    <div class="nav-bar-wrapper">
+        <div class="nav-logo-wrapper">
+            <span>Tickets Shop</span>
+        </div>
+        <div class="nav-menu-wrapper">
+            <div class="nav-menu-item">
+                <span class="nav-menu-text">Check All Requests</span>
+            </div>
+
+
+            <div class="nav-menu-item">
+                <span class="nav-menu-text">Check Your Request</span>
+            </div>
+
+
+            <div class="nav-menu-item">
+                <span class="nav-menu-text">Home</span>
+            </div>
+
+
+
+        </div>
+        <div class="contacts-nav">
+
+            <span class="nav-menu-text">About Us</span>
+        </div>
+        <div class="menu-button">
+            <img src="../Assets/menu.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="page-wrapper">
+    <section class="registration-section">
+        <div class="registration-form-wrapper">
+            <div class="registration-teams">
+                <div class="teams-price-wrapper">
+                    <div class="teams-wrapper">
+                        <div class="team1-wrapper">
+                            <span id="name-firs-team">Barcelona</span>
+
+                            <div class="team-logo">
+                                <img id="team1-logo" class="team-image" src="../Assets/barca.png" alt="barca">
+                            </div>
+                        </div>
+
+                        <div class="time">
+                            <span id="date">07.05</span>
+                            <span id="time" class="match-time">20:00</span>
+                        </div>
+
+                        <div class="team2-wrapper">
+                            <span id="name-second-team">Atletico</span>
+                            <div class="team-logo">
+                                <img id="team2-logo" class="team-image" src="../Assets/atletico.png" alt="real">
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="price-wrapper">
+                        <div class="header-price">Ticket Price</div>
+                        <div class="price">
+                            <span id="price">40$</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="form-card">
+                <div class="registration-form">
+                    <div class="header-registration">
+                        <span>Contact Information</span>
+                    </div>
+                    <form action="#" id="myForm" class="form-wrapper">
+                        <label class="form-label" for="name">First Name</label>
+                        <input class="form-input" type="text"
+                               id="name" name="name" placeholder="First Name" required>
+
+                        <label class="form-label" for="tel">Phone number</label>
+                        <input class="form-input" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                               id="tel" name="tel" placeholder="+38 (_) __ ___ __ __" required>
+
+                        <label class="form-label" for="email">Email </label>
+                        <input class="form-input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                               id="email" name="email" placeholder="Email" required>
+
+                        <label class="form-label" for="select-team">Choose a match</label>
+                        <select id="select-team" class="form-input form-input-select">
+                            <option value="bar-atm">Barcelona - Atletico</option>
+                            <option value="bar-rmd">Barcelona - Real Madrid</option>
+                            <option value="atm-rmd">Atletico - Real Madrid</option>
+                        </select>
+                        <button class="form-submit-button" type="submit">Buy Ticket</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+</div>
+<div class="footer">
+ <span class="footer-credentials">
+        © 2022 Tickets Shop
+    </span>
+</div>
+</body>
+</html>
